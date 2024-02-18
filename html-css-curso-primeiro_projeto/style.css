@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+    font-family: montserrat, sans-serif;
+}
+
+.titulo_destaque {
+    color: #22d4fd;
+}
+
+/* O que eu fiz sozinho! */
+
+.conteudo {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__container {
+    width: 615px;
+}
+
+.conteudo__container h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.conteudo__container p {
+    font-size: 24px;
+    margin-bottom: 51px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+a {
+    flex-grow: 1;
+    padding: 16px;
+    background-color: #22d4fd;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #22d4fd;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
