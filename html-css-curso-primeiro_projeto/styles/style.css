@@ -29,7 +29,7 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -37,6 +37,7 @@ body {
 
 .cabecalho__menu__link:hover {
     color: var(--cor-hover);
+    transition: 0.3s;
 }
 
 .conteudo {
@@ -44,10 +45,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .conteudo__container {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -56,7 +58,7 @@ body {
 .conteudo__container__titulo {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .conteudo__container__destaque {
@@ -64,7 +66,7 @@ body {
 }
 
 .conteudo__container__paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .conteudo__links {
@@ -78,7 +80,7 @@ body {
 .conteudo__links__subtitulo {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .conteudo__links__link {
@@ -86,20 +88,25 @@ body {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0;
     color: var(--cor-secundaria);
     text-decoration: none;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .conteudo__links__link:hover {
     background-color: var(--cor-hover);
-    width: 390px;
+    width: 55%;
+    transition: 0.3s;
+}
+
+.conteudo__imagem {
+    width: 50%;
 }
 
 .rodape {
@@ -107,6 +114,30 @@ body {
     padding: 24px;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+        gap: 80px;
+        padding: 5%;
+    }
+
+    .conteudo__container {
+        width: 100%;
+    }
+
+    .conteudo__imagem {
+        width: 100%;
+    }
 }
