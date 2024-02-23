@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #1F2544;
+    --cor-secundaria: #474F7A;
+    --cor-terciaria: #81689D;
+    --cor-hover: #FFD0EC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover);
+}
+
+.conteudo {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo__container {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__container__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.conteudo__container__destaque {
+    color: var(--cor-terciaria);
+}
+
+.conteudo__container__paragrafo {
+    font-size: 24px;
+}
+
+.conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.conteudo__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo__links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.conteudo__links__link:hover {
+    background-color: var(--cor-hover);
+    width: 390px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-size: 24px;
+    font-weight: 400;
+}
